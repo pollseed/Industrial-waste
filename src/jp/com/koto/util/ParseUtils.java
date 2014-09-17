@@ -1,8 +1,13 @@
 package jp.com.koto.util;
 
+import java.io.Serializable;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.concurrent.atomic.AtomicLong;
+
 /**
  * 文字や数字をパースするためのクラスです.<br>
- * 失敗してもエラーにならずにnullをただ返却します.<br>
+ * 失敗してもエラーにならずに{@code null}をただ返却します.<br>
  * ※返却値をオブジェクト型にして、オートボクシングをさせています(失敗時にnullを返却したいからです.)
  * 
  * @author PollSeed
@@ -131,6 +136,41 @@ public class ParseUtils {
 			return Integer.toHexString(value);
 		} catch (Exception e) {
 			return null;
+		}
+	}
+
+	/**
+	 * {@link Serializable}な型クラスを返します.<br>
+	 * {@link NullPointerException}を発した場合はただ{@code null}を返却します.
+	 * 
+	 * @author PollSeed
+	 */
+	public static class AtmicUtils implements Serializable {
+
+		private static final long serialVersionUID = 1L;
+
+		public static AtomicBoolean parseBoolean(String str) {
+			try {
+				return new AtomicBoolean(ParseUtils.parseBoolean(str));
+			} catch (NullPointerException e) {
+				return null;
+			}
+		}
+
+		public static AtomicInteger parseInteger(String str) {
+			try {
+				return new AtomicInteger(ParseUtils.parseInteger(str));
+			} catch (NullPointerException e) {
+				return null;
+			}
+		}
+
+		public static AtomicLong parseLong(String str) {
+			try {
+				return new AtomicLong(ParseUtils.parseLong(str));
+			} catch (NullPointerException e) {
+				return null;
+			}
 		}
 	}
 
