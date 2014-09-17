@@ -14,6 +14,30 @@ public class ParseUtils {
 	private static final int OCTAL_VALUE = 8;
 	private static final int HEX_VALUE = 16;
 
+	public static Byte parseByte(String str) {
+		try {
+			return Byte.parseByte(str);
+		} catch (NullPointerException | NumberFormatException e) {
+			return null;
+		}
+	}
+
+	public static Float parseFloat(String str) {
+		try {
+			return Float.parseFloat(str);
+		} catch (NullPointerException | NumberFormatException e) {
+			return null;
+		}
+	}
+
+	public static Double parseDouble(String str) {
+		try {
+			return Double.parseDouble(str);
+		} catch (NullPointerException | NumberFormatException e) {
+			return null;
+		}
+	}
+
 	public static Integer parseInt(String str) {
 		try {
 			return Integer.parseInt(str);
@@ -30,10 +54,34 @@ public class ParseUtils {
 		}
 	}
 
+	public static Short parseShort(String str) {
+		try {
+			return Short.parseShort(str);
+		} catch (NullPointerException | NumberFormatException e) {
+			return null;
+		}
+	}
+
+	public static Long parseLong(String str) {
+		try {
+			return Long.parseLong(str);
+		} catch (NullPointerException | NumberFormatException e) {
+			return null;
+		}
+	}
+
 	public static Boolean parseBoolean(String str) {
 		try {
 			return Boolean.parseBoolean(str);
 		} catch (NullPointerException | NumberFormatException e) {
+			return null;
+		}
+	}
+
+	public static String parseString(Character str) {
+		try {
+			return Character.toString(str);
+		} catch (Exception e) {
 			return null;
 		}
 	}
