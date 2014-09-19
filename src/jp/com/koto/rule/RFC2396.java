@@ -5,6 +5,7 @@ import jp.com.koto.constant.IConstant;
 /**
  * Uniform Resource Identifiers (URI): Generic Syntax<br>
  * Request for Comments: 2396
+ * 
  * @since 1998/8
  * @author PollSeed
  */
@@ -36,30 +37,30 @@ public class RFC2396 {
             return name;
         }
 
-		@Override
-		public String get() {
-			return syntax;
-		}
+        @Override
+        public String get() {
+            return syntax;
+        }
 
-		/**
-		 * throw new UnsupportedOperationException
-		 * 
-		 * @throws UnsupportedOperationException
-		 */
-		@Deprecated
-		@Override
-		public void set(String value) {
-			throw new UnsupportedOperationException();			
-		}
+        /**
+         * throw new UnsupportedOperationException
+         * 
+         * @throws UnsupportedOperationException
+         */
+        @Deprecated
+        @Override
+        public void set(String value) {
+            throw new UnsupportedOperationException();
+        }
 
-		@Override
-		public String getDefault() {
-			// TODO Auto-generated method stub
-			return null;
-		}
+        @Override
+        public String getDefault() {
+            // TODO Auto-generated method stub
+            return null;
+        }
     }
 
-    /* Collected BNF for URI  */
+    /* Collected BNF for URI */
     public static final String HEX = URIGenericSyntaxStandards.DIGIT.get() + "|" + URIGenericSyntaxStandards.HEX_WORDS.get();
     public static final String ESCAPED = "%" + URIGenericSyntaxStandards.HEX_WORDS.get() + URIGenericSyntaxStandards.HEX_WORDS.get();
     public static final String ALPHA = URIGenericSyntaxStandards.LOW_ALPHA.get() + "|" + URIGenericSyntaxStandards.UP_ALPHA.get();

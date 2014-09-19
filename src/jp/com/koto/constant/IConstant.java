@@ -9,12 +9,12 @@ package jp.com.koto.constant;
  */
 public interface IConstant<V> {
 
-	V get();
+    V get();
 
-	String getName();
+    String getName();
 
-	void set(V value);
+    void set(V value);
 
-	V getDefault();
+    V getDefault();
 
 }
