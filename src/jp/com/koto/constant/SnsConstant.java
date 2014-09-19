@@ -10,9 +10,15 @@ public enum SnsConstant implements IConstant<Long> {
 	/* ジャンルを限定しない */
 	GREE(10L, "グリー株式会社", "http://gree.jp/"), 
 	MIXI(20L, "mixi","https://mixi.jp/"),
+	LINE(30L, "LINE株式会社", "http://line.me/"),
+	//	TODO AMEBAというSNSではない？
+	//  AMEBA(40L, "サイバーエージェント", "http://ameblo.jp/"),
 
 	/* モバイル特化 */
 	MOBAGE(100L, "株式会社ディー・エヌ・エー", "http://www.mbga.jp/"),
+	
+	/* ゲーム */
+	MIIVERSE(200L, "任天堂", "https://miiverse.nintendo.net/"),
 
 	/* 趣味・娯楽 */
 	MINKABU(1000L, "株式会社みんかぶ", "http://minkabu.jp/"), 
