@@ -1,7 +1,7 @@
 koto project
 ====
-* J) kotoは、「箏曲」の事を表現しています。
-* E) koto, expresses the "Koto" thing.
+* J) kotoは、日本古典楽器「箏曲」の事を表現しています。
+* E) koto represented Japan classical instrument "Koto" thing.
 
 ## 概要
 * JavaのUtilクラスを中心に使えそうなものをまとめます。
