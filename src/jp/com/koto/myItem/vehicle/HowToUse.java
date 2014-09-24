@@ -1,4 +1,4 @@
-package vehicle;
+package jp.com.koto.myItem.vehicle;
 
 public class HowToUse {
 
