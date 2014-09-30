@@ -1,4 +1,4 @@
-package util;
+package jp.com.koto.util;
 
 import java.util.Calendar;
 import java.util.Date;

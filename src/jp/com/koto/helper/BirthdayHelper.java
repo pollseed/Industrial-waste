@@ -1,8 +1,10 @@
-package util;
+package jp.com.koto.helper;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+
+import jp.com.koto.util.DateUtils;
 
 /**
  * 誕生日クラス
