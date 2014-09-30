@@ -12,19 +12,6 @@ import java.util.Date;
 @JavaStandardVersion
 public class BirthdayHelper extends DateUtils {
 
-    /** HOW TO USE  **/
-    @Deprecated
-    public static void main(String[] args) {
-        SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd");
-        try {
-            System.out.println(getAge(format.parse("19900101")));
-            System.out.println(yesterday());
-            System.out.println(tomorrow());
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-    }
-
     /**
      * 現在年月日から年齢を取得します.
      * @param birthday
