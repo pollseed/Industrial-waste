@@ -1,13 +1,13 @@
 package jp.com.koto.helper;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import jp.com.koto.common.JavaStandardVersion;
 import jp.com.koto.util.DateUtils;
 
 /**
  * 誕生日クラス
+ * 
  * @author pollseed
  *
  */
@@ -16,6 +16,7 @@ public class BirthdayHelper extends DateUtils {
 
     /**
      * 現在年月日から年齢を取得します.
+     * 
      * @param birthday
      * @return
      */

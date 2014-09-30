@@ -3,9 +3,12 @@ package jp.com.koto.util;
 import java.util.Calendar;
 import java.util.Date;
 
+import jp.com.koto.common.JavaStandardVersion;
+
 /**
- * 日付のUtilクラス
+ * 日付のUtilクラス<br>
  * only Java STD class.
+ * 
  * @author pollseed
  * 
  */
@@ -14,6 +17,7 @@ public class DateUtils {
 
     /**
      * 現在年月日を返却します.
+     * 
      * @return
      */
     public static Date now() {
@@ -22,6 +26,7 @@ public class DateUtils {
 
     /**
      * 明日を返却します.
+     * 
      * @return
      */
     public static Date yesterday() {
@@ -30,6 +35,7 @@ public class DateUtils {
 
     /**
      * 昨日を返却します.
+     * 
      * @return
      */
     public static Date tomorrow() {
@@ -38,6 +44,7 @@ public class DateUtils {
 
     /**
      * 指定した日付から指定した数値を加算します.
+     * 
      * @param date
      * @param value
      * @return
@@ -51,6 +58,7 @@ public class DateUtils {
 
     /**
      * 指定した日付を比較し、その差分を返却します.
+     * 
      * @param one
      * @param another
      * @return
