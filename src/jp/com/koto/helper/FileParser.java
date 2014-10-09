@@ -1,4 +1,4 @@
-package jp.com.machine.test;
+package jp.com.koto.helper;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
