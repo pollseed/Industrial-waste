@@ -8,9 +8,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * Mahout のファイル解析実装クラス
- */
 class FileParser extends AbstractFileParser {
 
     /**
