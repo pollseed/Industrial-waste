@@ -1,8 +1,6 @@
 koto project
 ====
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/pollseed/koto?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-* J) kotoは、日本古典楽器「箏曲」の事を表現しています。
-* E) koto represented Japan classical instrument "Koto" thing.
 
 ## 概要
 * JavaのUtilクラスを中心に使えそうなものをまとめます。
