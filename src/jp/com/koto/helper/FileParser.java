@@ -51,8 +51,14 @@ class FileParser extends AbstractFileParser {
                     }
                     bw.append(str);
                     strCnt++;
+                    if (strCnt > 500) {
+                        bw.flush();
+                    }
                 }
                 lineCnt++;
+                if (lineCnt > 100) {
+                    bw.flush();
+                }
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
