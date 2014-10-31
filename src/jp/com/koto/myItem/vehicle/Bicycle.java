@@ -7,8 +7,8 @@ public class Bicycle extends AbstVehicle {
     private final int FRICTION_VALUE = 4;
     private final double MINUTE_CONVERT_VALUR = 60;
     private final Double MOTHER = 15d;
-    private final Double CROSS = 18d;
-    private final Double ROAD = 20d;
+//    private final Double CROSS = 18d;
+//    private final Double ROAD = 20d;
 
     public void create() {
         if (isNull(super.range)) {

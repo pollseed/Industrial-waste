@@ -1,4 +1,4 @@
-package jp.com.argorithm;
+package jp.com.koto.sort;
 
 public class HowToUse {
     // HOT TO USE

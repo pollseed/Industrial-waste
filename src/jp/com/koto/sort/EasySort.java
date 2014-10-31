@@ -1,13 +1,12 @@
-package jp.com.argorithm;
+package jp.com.koto.sort;
 
 /**
- * Simple sort class
- * <br>
- * TODO If you sort itself to increase in the future, and in the form to be implemented in each sorting to create the interface. 
- * <br>
- * <code>cf.) class BubbleSort extends AbstractSort implements Sort </code>
- * <br>
+ * Simple sort class <br>
+ * TODO If you sort itself to increase in the future, and in the form to be implemented in each sorting to create the
+ * interface. <br>
+ * <code>cf.) class BubbleSort extends AbstractSort implements Sort </code> <br>
  * Be implemented in the above form.
+ * 
  * @author pollseed
  */
 public class EasySort extends AbstractSort {
@@ -16,6 +15,7 @@ public class EasySort extends AbstractSort {
 
     /**
      * Give the specified array
+     * 
      * @param args
      */
     public EasySort(int[] args) {
@@ -24,8 +24,11 @@ public class EasySort extends AbstractSort {
 
     /**
      * use the random sequences
-     * @param maxArray Number of arrays
-     * @param maxValue 1～any value
+     * 
+     * @param maxArray
+     *            Number of arrays
+     * @param maxValue
+     *            1～any value
      */
     public EasySort(int maxArray, int maxValue) {
         super(maxArray, maxValue);
@@ -96,6 +99,7 @@ public class EasySort extends AbstractSort {
 
     /**
      * return the sorted array
+     * 
      * @return
      */
     public int[] getSorted() {

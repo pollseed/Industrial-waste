@@ -1,4 +1,4 @@
-package jp.com.argorithm;
+package jp.com.koto.sort;
 
 public abstract class AbstractSort {
 
@@ -26,8 +26,11 @@ public abstract class AbstractSort {
 
     /**
      * use the random sequences
-     * @param maxArray Number of arrays
-     * @param maxValue 1～any value
+     * 
+     * @param maxArray
+     *            Number of arrays
+     * @param maxValue
+     *            1～any value
      */
     protected AbstractSort(int maxArray, int maxValue) {
         searchArray = new int[maxArray];
