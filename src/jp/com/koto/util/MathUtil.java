@@ -23,10 +23,30 @@ public class Algorithm {
      * @return
      */
     public static int euclidDivision(int a, int b) {
-        int remain = a % b;
-        if (remain == 0) {
-            return b;
+        if (m == 0 || m < n)
+            throw new IllegalArgumentException();
+        if (n == 0)
+            return m;
+        int remain = m % n;
+        if (remain == 0)
+            return n;
+        return euclidDivision(n, remain);
+    }
+    
+    /**
+     * Whether prime
+     * @param n
+     * @return
+     */
+    public boolean primalityTest(int n) {
+        if (n < 2)
+            return false;
+        else if (n % 2 == 0)
+            return true;
+        for (int i = 3; i <= n / i; i += 2) {
+            if (n % i == 0)
+                return false;
         }
-        return euclidDivision(b, remain);
+        return true;
     }
 }
