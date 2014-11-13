@@ -32,5 +32,7 @@ public class HttpRequest extends HttpURLConnection {
         if (super.connected) {
             return;
         }
+        // TODO
+        // 未実装
     }
 }
