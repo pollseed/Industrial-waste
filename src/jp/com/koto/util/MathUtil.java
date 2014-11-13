@@ -38,7 +38,7 @@ public class Algorithm {
      * @param n
      * @return
      */
-    public boolean primalityTest(int n) {
+    public static boolean primalityTest(int n) {
         if (n < 2)
             return false;
         else if (n % 2 == 0)
