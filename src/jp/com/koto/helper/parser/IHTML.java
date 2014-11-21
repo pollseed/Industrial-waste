@@ -1,0 +1,3 @@
+interface IHTML {
+    void parser();
+}
