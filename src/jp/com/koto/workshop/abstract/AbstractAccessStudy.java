@@ -1,6 +1,6 @@
 package hoge;
 
-abstract class AbstractAccessStudy {
+public abstract class AbstractAccessStudy {
     final int superVariable = 100;
 
     final int var = 100;
