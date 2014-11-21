@@ -5,7 +5,7 @@ import java.io.File;
 /**
  * ファイルの解析をするための抽象クラス
  */
-abstract class AbstractFileParser {
+public abstract class AbstractFileParser {
 
     protected String path = null;
     protected int cut = 0;
