@@ -13,6 +13,7 @@ public class HTMLHelper extends AbstractHTML {
     @Override
     public void parser() {
         try {
+            // FIXME ここらへんの処理を綺麗に
             Document doc = Jsoup.parse(file, "UTF-8");
             html = doc.html();
             tag = doc.tag();
