@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-class FileParser extends AbstractFileParser {
+public class FileParser extends AbstractFileParser {
 
     /**
      * @param path 出力するファイルのパス
