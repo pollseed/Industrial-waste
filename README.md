@@ -49,3 +49,13 @@ DateUtils.javaでは、普段良く使う日付の処理をまとめた。ただ
 
 ## 環境
 * jdk v1.7.0_51
+
+## Lib
+```
+<dependency>
+  <!-- jsoup HTML parser library @ http://jsoup.org/ -->
+  <groupId>org.jsoup</groupId>
+  <artifactId>jsoup</artifactId>
+  <version>1.8.1</version>
+</dependency>
+```
