@@ -21,7 +21,7 @@ public class Parser extends FactoryParser {
         return new IndividualParser(null, null, new File("piyo"));
     }
 
-    public Parser() {}
+    private Parser() {}
 
     public class IndividualParser implements InterfaceParser {
         @Override
