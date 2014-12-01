@@ -20,13 +20,13 @@ import file.FileParser;
  *
  */
 public class Parser extends FactoryParser {
-    public static final FactoryParser parser = new Parser();
+    private static final FactoryParser parser = new Parser();
 
     public static InterfaceParser singletonCreateInstance() {
         return parser.create();
     }
     
-    public InterfaceParser create() {
+    private InterfaceParser create() {
         return new IndividualParser(null, null, new File("piyo"));
     }
 
