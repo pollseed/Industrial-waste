@@ -11,7 +11,12 @@ import org.apache.commons.lang3.StringUtils;
 import file.FileParser;
 
 public class Parser extends FactoryParser {
+    public static final FactoryParser parser = new Parser();
 
+    public static InterfaceParser singletonCreateInstance() {
+        return parser.create();
+    }
+    
     public InterfaceParser create() {
         return new IndividualParser(null, null, new File("piyo"));
     }
