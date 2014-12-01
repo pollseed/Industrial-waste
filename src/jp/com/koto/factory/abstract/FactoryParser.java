@@ -18,7 +18,7 @@ public abstract class FactoryParser {
 
     protected abstract void setFile(File file);
 
-    protected InterfaceParser create() {
+    public InterfaceParser create() {
         return new DefaultParser();
     }
 
