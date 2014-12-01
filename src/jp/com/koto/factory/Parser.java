@@ -10,6 +10,15 @@ import org.apache.commons.lang3.StringUtils;
 
 import file.FileParser;
 
+/**
+ * <code>
+ *  // First, Please call sigleton method.<br>
+ *  InterfaceParser parser = Parser.singletonCreateInstance();<br><br>
+ *  // Then, Please call any of the methods.<br>
+ *  parser.parser();
+ * </code>
+ *
+ */
 public class Parser extends FactoryParser {
     public static final FactoryParser parser = new Parser();
 
