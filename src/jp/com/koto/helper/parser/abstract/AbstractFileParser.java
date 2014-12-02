@@ -26,6 +26,6 @@ public abstract class AbstractFileParser {
      * 解析をして、{@link #path} に出力する
      * @param file
      */
-    abstract void parse(File file);
+    protected abstract void parse(File file);
 
 }
