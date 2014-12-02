@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
+ * Fileパースのクラス
  * @author pollseed
  */
 public class FileParser extends AbstractFileParser {
@@ -17,7 +18,7 @@ public class FileParser extends AbstractFileParser {
      * @param path 出力するファイルのパス
      * @param cut 省きたいカラムの数
      */
-    FileParser(String path, int cut) {
+    public FileParser(String path, int cut) {
         super(path, cut);
     }
 
@@ -31,7 +32,7 @@ public class FileParser extends AbstractFileParser {
     }
 
     @Override
-    void parse(File file) {
+    public void parse(File file) {
         BufferedReader br = null;
         BufferedWriter bw = null;
         try {
